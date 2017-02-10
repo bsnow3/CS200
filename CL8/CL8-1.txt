@@ -1,0 +1,71 @@
+Sample values for average: 3 2 1
+output should be 2
+output was 5.33
+
+void Test_Average()
+{
+	int ave = 2;
+	int avetest = Average(3, 2, 1);
+	if (ave != avetest)
+	{
+		cout << "Fail" << endl;
+	}
+	else
+		cout << "Pass" << endl;
+}
+
+there was no parenthesis around "a + b + c"
+causing the order of operations to take effect.
+
+sample values for max:  2 3 4
+expected output is 4
+return was 3
+
+void Test_Max()
+{
+	int max = 4;
+	int maxtest = Max(2, 3, 4);
+	if (max != maxtest)
+	{
+		cout << "Fail" << endl;
+	}
+	else
+		cout << "Pass" << endl;
+}
+
+The function only checked if A was less than
+B, not B against C, or C against A.
+
+Factorial test value: 4
+expected value: 24
+void Test_Factorial()
+{
+	int fac = 24;
+	int factest = Factorial(4);
+	if (fac != factest)
+	{
+		cout << "Fail " << factest << endl;
+	}
+	else
+		cout << "Pass " << factest << endl;
+	while (true);
+}
+
+i needed to be compared greater than 1 and decremented after starting the loop.
+
+FormatName input: bradly snow
+output : snow,bradly
+void Test_FormatName()
+{
+	string form = "snow, bradly";
+	string formtest = FormatName("bradly", "snow");
+	if (form != formtest)
+	{
+		cout << "Fail " << endl;
+	}
+	else
+		cout << "Pass " << endl;
+	while (true);
+}
+
+there needed to be a space after the comma in the string in the return line of the function.
