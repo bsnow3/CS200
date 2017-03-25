@@ -23,9 +23,10 @@ int main()
 	cout << "How many managers?" << endl;
 	int managercount = 0;
 	cin >> managercount;
-	i = 0;
+	int i = 0;
 	Manager* managers;
-	managers = new [managercount];
+	int* mgrcount;
+	mgrcount = new int[managercount];
 	while (i != managercount)
 	{
 		managers[i].name = names[rand() % 16];
